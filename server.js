@@ -30,7 +30,7 @@ mongoose.connect('mongodb://varshaLadha:chhotu1810@ds239648.mlab.com:39648/testd
 
 app.get('/api/student',(req,res) => {
     student.find().then((result) => {
-        res.send(result);
+        res.send({result});
     }).catch((err) => {
         console.log(err);
     })
