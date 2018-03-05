@@ -38,7 +38,7 @@ app.get('/api/student',(req,res) => {
 
 app.get('/',(req,res) => {
     student.find().then((result) => {
-        res.send(result);
+        res.send({result});
     }).catch((err) => {
         console.log(err);
     })
